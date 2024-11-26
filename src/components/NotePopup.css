@@ -95,4 +95,84 @@
     background-color: #c82333;
   }
   
-  
+  /* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center;
+    gap: 10px;
+  }
+
+  .header-title {
+    font-size: 20px; /* Adjust title size */
+  }
+
+  .header-title img {
+    height: 20px; /* Adjust image size */
+  }
+
+  .notes-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust card layout */
+    gap: 12px;
+  }
+
+  .note-card {
+    padding: 12px; /* Reduce padding for smaller cards */
+  }
+
+  .pagination-container {
+    flex-direction: column; /* Stack pagination buttons vertically */
+    align-items: center;
+    gap: 8px;
+  }
+
+  .pagination-btn,
+  .add-note-btn {
+    width: 100%; /* Make buttons full width */
+    margin-top: 8px;
+  }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px; /* Reduce overall font size */
+  }
+
+  .header-title {
+    font-size: 18px; /* Further reduce title size */
+  }
+
+  .notes-grid {
+    grid-template-columns: 1fr; /* Single-column layout */
+  }
+
+  .note-card {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .pin-message {
+    font-size: 14px; /* Reduce font size for messages */
+  }
+
+  .pagination-container {
+    gap: 6px;
+  }
+
+  .pagination-btn {
+    padding: 8px 16px; /* Smaller pagination buttons */
+    font-size: 0.9rem;
+  }
+
+  .popup-content {
+    width: 90%; /* Shrink popup for smaller screens */
+    padding: 16px;
+  }
+
+  .popup-title,
+  .popup-tagline,
+  .popup-body {
+    font-size: 14px; /* Adjust input sizes */
+  }
+}
