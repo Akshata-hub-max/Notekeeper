@@ -1,0 +1,96 @@
+/* NoteCard.css */
+
+.note-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  margin-bottom: 16px; 
+  box-sizing: border-box; 
+}
+
+
+.note-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.note-card.pinned {
+  background-color: #f0f8ff; 
+  border-left: 4px solid yellow; 
+}
+
+
+
+.notes-grid {
+  display: block; 
+  width: 100%; 
+  padding: 0; 
+  margin: 0; 
+}
+
+
+.notes-grid .note-card {
+  width: 100%;
+}
+
+
+
+/* Title styling */
+.note-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+
+/* Tagline styling */
+.note-tagline {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+
+
+/* Body text styling */
+.note-body {
+  font-size: 14px;
+  color: #333;
+}
+
+
+
+/* Pin button styling */
+.pin-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.pin-btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Pinned state styling for the pin button */
+.pin-btn.pinned {
+  background-color: #ffc107;
+}
+
+
+
+.pin-btn.pinned:hover {
+  background-color: #e0a800;
+}
